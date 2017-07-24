@@ -1,6 +1,6 @@
 # Python Tutorial
 
-### What is **__init__** method in python
+### 1. What is **__init__** method in python
 
 Init method of a class comes into picture when a class is initialized . When an object instatiation operation is invoked with `x=MyClass(value1,valu2)` the object x is instantiated with specific initial state. 
 
