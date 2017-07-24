@@ -7,7 +7,7 @@ Init method of a class comes into picture when a class is initialized . When an 
 **Example of car class:**
 
 `class Car:
-    def __init__(self,color,type):
+    def ___init___(self,color,type):
         self.c=color
         self.t=type
     def speed(self,kmph)
