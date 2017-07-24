@@ -1,0 +1,47 @@
+import urllib.request, urllib.parse, urllib.error
+import time
+import json
+import sys
+import os
+
+# Assign appropriate values to these variables
+sample_host = "https://myCloud.perfectomobile.com"
+sample_user = "myUser"
+sample_password = "myPassword"
+sample_file_path = "C:\\temp\\"
+sample_upload_file_name = "mobile.jpg"
+sample_upload_file = sample_file_path + sample_upload_file_name
+sample_download_file_name = "download.jpg"
+sample_download_file = sample_file_path + sample_download_file_name
+
+# Do not change these variables
+resource_type = "repositories/media"
+root = "PUBLIC:"
+resource_key = root + sample_upload_file_name
+
+def send_request(url, content):
+    print("Submitting", url)
+    if (content == "") :
+        response = urllib.request.urlopen(url)
+    else :
+        response = urllib.request.urlopen(url, content)
+    rc = response.getcode()
+    print("rc =", rc)
+    return response
+
+
+
+def get_url(resource_type, resource_id, operation):
+    url = sample_host + "/services/" + resource_type
+    if (resource_id != ""):
+        url += "/" + resource_id
+    query = urllib.parse.urlencode({"operation": operation, "user": sample_user, "password": sample_password })
+    url += "?" + query
+    return url
+
+# Upload item to repository print ("Uploading item " + resource_key)
+file = open(sample_upload_file, 'rb')
+content = file.read()
+file.close()
+url = get_url(resource_type, resource_key, "upload")
+send_request(url, content)
