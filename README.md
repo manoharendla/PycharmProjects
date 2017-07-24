@@ -6,18 +6,18 @@ Init method of a class comes into picture when a class is initialized . When an 
 
 **Example of car class:**
 
-`class Car:
-    def ___init___(self,color,type):
-        self.c=color
-        self.t=type
-    def speed(self,kmph)
-    print "Speed of the car self.type is", kmph
+`class Car:`
+    `def ___init___(self,color,type):`
+        `self.c=color`
+        `self.t=type`
+    `def speed(self,kmph)`
+    `print "Speed of the car self.type is", kmph`
     
 
-swift = Car(red,hatchback)
-swift.speed(100)
-ciaz = Car(blue,sedan)
-ciaz.speed(150)`
+`swift = Car(red,hatchback)`
+`swift.speed(100)`
+`ciaz = Car(blue,sedan)`
+`ciaz.speed(150)`
  
  
     
