@@ -1,3 +1,11 @@
+# Python Tutorial
+
+### What is **_init_** method in python
+
+Init method of a class comes into picture when a class is initialized . When an object instatiation operation is invoked with `x=MyClass(value1,valu2)` the object x is instantiated with specific initial state. 
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/manoharendla/PycharmProjects/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
