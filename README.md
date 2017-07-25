@@ -21,3 +21,31 @@ ciaz = Car(blue,sedan)
 ciaz.speed(150)
  
 ``` 
+
+### What is pass in python ?
+
+Pass is a keyword which is used to perform  *No Operation*.
+
+Lets say you wanted to create a class in which you defined methods without any body
+
+```Python
+class Pass:
+    def firstMethod(self):
+        pass
+
+    def secondMethod(self):
+        pass
+
+t=Pass()
+t.firstMethod()
+
+```
+
+If a method is defined without  a pass keyword an Indentation Error is seen. So in such cases we usually prefer pass to perform a safe no operation.
+
+```Python
+    def secondMethod(self):
+      ^
+IndentationError: expected an indented block
+
+```
