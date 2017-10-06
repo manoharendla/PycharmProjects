@@ -1,0 +1,8 @@
+name=input("Please enter your name:\n")
+age=int(input("Please enter your age:\n"))
+remaining_years=100-age
+n=int(input("How many time do you want me to print it? \n"))
+for i in range(n):
+    print("By the year "+str(int(2017+remaining_years))+" You'll be turning 100 years")
+
+

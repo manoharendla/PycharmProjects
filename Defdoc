@@ -1,0 +1,6 @@
+How to print a list in a single command :
+
+
+How to define a function :
+def fnName():
+   print("Something")
