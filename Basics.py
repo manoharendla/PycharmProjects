@@ -3,6 +3,7 @@ __author__ = 'Manohar Endla'
 #Small Change
 # Declaring variables in Python
 
+m=2
 x=1
 y=2
 z=x+y
